@@ -1,0 +1,297 @@
+/* Reset
+Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+Removed elements not supported in HTML5
+-----------------------------------------------------------------------------*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* 
+Trigger the new block level elements in to the correct content flow
+-----------------------------------------------------------------------------*/
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* Set up document
+-----------------------------------------------------------------------------*/
+body {
+    font: 62.5%/1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right, #16a085, #5db285, #8cc288, #b8d290, #e1e19f);
+}
+#wrapper {
+    width: 920px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background: #A2C795;
+    padding: 20px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-bottom-left-radius: 15px;
+    -o-border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-bottom-right-radius: 15px;
+    -o-border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Typography
+-----------------------------------------------------------------------------*/
+h1 {
+    color: #2F4858;
+    font: Lucida Grande;
+    font-size: 4em;
+    line-height: 0.9em;
+    margin-bottom: 0.9em;
+}
+h2 {
+    color: #2F4858;
+    font: Lucida Grande;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+h3 {
+    color: #2F4858;
+    font: Lucida Grande;
+    font-size: 1.6em;
+    line-height: 1.13em;
+    margin-bottom: 1.13em;
+}
+h4 {
+    color: #2F4858;
+    font: Lucida Grande;
+    font-size: 1.4em;
+    line-height: 1.29em;
+    margin-bottom: 1.29em;
+}
+h5 {
+    color: #2F4858;
+    font: Lucida Grande;
+    font-size: 1.3em;
+    line-height: 1.38em;
+    margin-bottom: 1.38em;
+}
+h6 {
+    color: #2F4858;
+    font: Lucida Grande;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+p,
+q,
+cite,
+address,
+ul,
+ol,
+dl {
+    color: #2F4858;
+    font: Lucida Sans;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+li,
+dd,
+dt {
+    color: #2F4858;
+    font: Lucida Sans;
+    font-size: 1.4em;
+}
+a {
+  text-decoration: underline;
+  color: #33c;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+code,
+samp,
+dfn,
+kbd,
+var,
+acronym,
+ins,
+del,
+abbr {
+  speak: spell-out;
+}
+acronym {
+  speak: normal;
+}
+/* CSS Tables
+-----------------------------------------------------------------------------*/
+.css-table {
+  width: 100%;
+  display: table;
+}
+.css-table .two-column {
+  display: table-row;
+}
+.css-table .two-column .cell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+.css-table .two-column .cell * {
+  width: 90%;
+}
+.css-table .three-column {
+  display: table-row;
+}
+.css-table .three-column .cell {
+  display: table-cell;
+  width: 33.33333%;
+}
+.css-table .three-column .cell * {
+  width: 90%;
+}
+.css-table .four-column {
+  display: table-row;
+}
+.css-table .four-column .cell {
+  display: table-cell;
+  width: 25%;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+    background: #16A085;
+}
+header nav {
+  width: 960px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav ul {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 0;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 1%;
+}
+    header nav ul li a {
+        background: #007D83;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -o-border-radius: 15px;
+        border-radius: 15px;
+        display: inline-block;
+        padding: 10px 30px 12px;
+        color: #E1E19F;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+    }
+        header nav ul li a:hover {
+            background-color: #008F87;
+            animation-name: example;
+            animation-duration: 0.5s;
+            animation-fill-mode: both;
+        }
+    @keyframes example {
+    0% {
+        top: 2px;
+    }
+
+        25% {
+            top: 3px;
+        }
+
+        50% {
+            top: 4px;
+        }
+
+        75% {
+            top: 5px;
+        }
+
+        100% {
+            top: 6px;
+            background-color: #81B576;
+        }
+           
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    color: #2F4858;
+    border-top: 1px solid #376873;
+    padding-top: 1.5em;
+}
+footer ul {
+  list-style: none;
+}
